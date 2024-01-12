@@ -6,13 +6,16 @@ btnGeneratePassword.addEventListener("click", () => {
   console.log("oi");
 });
 
-/**
- * 
- */
+
 input.addEventListener("click", () => {
   copiarParaAreaDeTransferencia(input);
 });
 
+/**
+ * 
+ * @param {*} comprimento 
+ * @returns 
+ */
 function generatePassword(comprimento = 20) {
   const caracteres =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()-_=+";
@@ -26,6 +29,11 @@ function generatePassword(comprimento = 20) {
   return senha;
 }
 
+/**
+ * 
+ * @param {*} input 
+ * @returns 
+ */
 function copiarParaAreaDeTransferencia(input) {
   if (input.value === "") return;
 
