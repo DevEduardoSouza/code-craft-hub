@@ -6,6 +6,9 @@ btnGeneratePassword.addEventListener("click", () => {
   console.log("oi");
 });
 
+/**
+ * 
+ */
 input.addEventListener("click", () => {
   copiarParaAreaDeTransferencia(input);
 });
